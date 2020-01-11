@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {console.log(`Your server is listening on ${PORT}`)});
 
 app.use(express.static('./public'));
-s
+
 app.get('/', (req, res) => {
   console.log('Im alive! Looks like Ive gotten a request.!')
   res.render('index.html');
